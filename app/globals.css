@@ -2,10 +2,45 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  color: #fff;
+  background-color: #222230;
+  font-family: Syne, sans-serif;
+}
 
+.navbar {
+  background-color: #191925;
+}
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.navbar header {
+  max-width: none;
+}
+
+.navbar ul[data-justify="start"] a {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.navbar ul[data-justify="start"] a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 100%;
+  bottom: 0;
+  height: 2px;
+  background-color: rgb(252, 211, 77);
+  transition: right 0.3s ease-out;
+}
+
+.navbar ul[data-justify="start"] a:hover {
+  color: rgb(252, 211, 77);
+}
+
+.navbar ul[data-justify="start"] a:hover::after {
+  right: 0;
+}
+
+.text-primary {
+  color: white;
 }
