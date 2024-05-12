@@ -8,10 +8,10 @@ import {
   NavbarMenuToggle,
   NavbarMenu,
   NavbarMenuItem,
-  Link,
-  Button,
-} from "@nextui-org/react";
+} from "@nextui-org/navbar";
+
 import Image from "next/image";
+import Link from "next/link";
 
 function Navigationbar() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
@@ -29,7 +29,6 @@ function Navigationbar() {
     <div>
       <Navbar
         className="navbar pt-4 pb-2 flex justify-between"
-        
         onMenuOpenChange={setIsMenuOpen}
       >
         <NavbarContent>
@@ -39,12 +38,12 @@ function Navigationbar() {
           />
           <NavbarBrand>
             <Image
-                src="/images/signature.png"
-                alt="chat"
-                width={200}
-                height={20}
-                className="mr-2"
-              />
+              src="/images/signature.png"
+              alt="chat"
+              width={400}
+              height={40}
+              className="mr-2"
+            />
           </NavbarBrand>
         </NavbarContent>
 
@@ -52,7 +51,7 @@ function Navigationbar() {
           <NavbarItem isActive>
             <Link href="#">Home</Link>
           </NavbarItem>
-          <NavbarItem >
+          <NavbarItem>
             <Link href="#" aria-current="page">
               About me
             </Link>
@@ -79,21 +78,19 @@ function Navigationbar() {
             </Link>
           </NavbarItem>
           <NavbarItem>
-            <Button
-              className="py-4 ms-6 px-6 rounded-sm bg-amber-300 text-black flex items-center justify-center"
-              as={Link}
+            <Link
+              className="hover:bg-amber-400 py-4 ms-6 px-6 rounded-sm bg-amber-300 text-black flex items-center justify-center"
               href="#"
-              variant="flat"
             >
               <Image
                 src="/images/chatSVG.svg"
                 alt="chat"
                 width={15}
                 height={10}
-                className="mr-1"
+                className="mr-2"
               />
               <span>Let&apos;s Talk</span>
-            </Button>
+            </Link>
           </NavbarItem>
         </NavbarContent>
         <NavbarMenu>
@@ -109,7 +106,7 @@ function Navigationbar() {
                 }
                 className="w-full"
                 href="#"
-                size="lg"
+                
               >
                 {item}
               </Link>

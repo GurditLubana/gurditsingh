@@ -8,7 +8,7 @@ body {
   font-family: Syne, sans-serif;
 }
 
-.navbar {
+.navbar, .landingPage {
   background-color: #191925;
 }
 
