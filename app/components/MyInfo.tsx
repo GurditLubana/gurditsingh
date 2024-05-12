@@ -7,7 +7,7 @@ function MyInfo() {
       <div className='flex flex-col items-start justify-center p-5 m-auto rounded-lg max-w-2xl'>
         <h1 className="text-6xl font-bold mb-2">Gurdit Singh</h1>
         <p className="text-xl font-semibold ">Full Stack Developer</p>
-        <p className="mt-4">
+        <p className="mt-8">
           In the world of code, I find my purpose; developing impactful software with every line I write. Let&apos;s make technology work for us.
         </p>
         <div className="mt-6">
