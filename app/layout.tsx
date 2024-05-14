@@ -1,9 +1,13 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Sedan } from 'next/font/google'
 import { NextUIProvider } from "@nextui-org/react";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const roboto = Sedan({
+  weight: '400',
+  subsets: ['latin'],
+  display: 'swap',
+})
 
 export const metadata: Metadata = {
   title: "Gurdit Singh",
@@ -17,7 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={roboto.className}>
         <NextUIProvider>{children}</NextUIProvider>
       </body>
     </html>
