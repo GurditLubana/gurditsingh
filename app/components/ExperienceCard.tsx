@@ -1,40 +1,40 @@
-// components/ExperienceCard.js
-import React from 'react';
+"use client"
+import { motion } from 'framer-motion';
 
 interface ExperienceCardProps {
     companyName: string;
     role: string;
     date: string;
-    
-  }
-function ExperienceCard({ companyName, role, date } : ExperienceCardProps) {
-  return (
-    <div className="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
-      <div className="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-slate-300 group-[.is-active]:bg-emerald-500 text-slate-500 group-[.is-active]:text-emerald-50 shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
-        <svg
-          className="fill-current"
-          xmlns="http://www.w3.org/2000/svg"
-          width="12"
-          height="10"
+}
+
+function ExperienceCard({ companyName, role, date }: ExperienceCardProps) {
+    // Animation settings
+    const cardVariants = {
+        hidden: { opacity: 0, y: -50 },
+        visible: { opacity: 1, y: 0 }
+    };
+
+    return (
+        <motion.div
+            className="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active left"
+            variants={cardVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: false, amount: 0.5 }}  // Set once to false
+            transition={{ duration: 0.8, delay: 0.2 }}
         >
-          <path
-            fillRule="nonzero"
-            d="M10.422 1.257 4.655 7.025 2.553 4.923A.916.916 0 0 0 1.257 6.22l2.75 2.75a.916.916 0 0 0 1.296 0l6.415-6.416a.916.916 0 0 0-1.296-1.296Z"
-          />
-        </svg>
-      </div>
-      <div className="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-white p-4 rounded border border-slate-200 shadow">
-        <div className="flex items-center justify-between space-x-2 mb-1">
-          <div className="font-bold text-slate-900">{companyName}</div>
-          <time className="font-caveat font-medium text-indigo-500">{date}</time>
-        </div>
-        <div className="text-slate-500">{role}</div>
-      </div>
-    </div>
-  );
+            <div className="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-slate-300 text-slate-500 shadow shrink-0 md:order-1">
+                {/* SVG Icon Here */}
+            </div>
+            <div className="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-white p-4 rounded border border-slate-200 shadow">
+                <div className="flex items-center justify-between space-x-2 mb-1">
+                    <div className="font-bold text-slate-900">{companyName}</div>
+                    <time className="font-caveat font-medium text-indigo-500">{date}</time>
+                </div>
+                <div className="text-slate-500">{role}</div>
+            </div>
+        </motion.div>
+    );
 }
 
 export default ExperienceCard;
-
-
-
