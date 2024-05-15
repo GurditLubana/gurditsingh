@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import { Sedan } from 'next/font/google'
+import { Marcellus } from 'next/font/google'
 import { NextUIProvider } from "@nextui-org/react";
 import "./globals.css";
 
-const roboto = Sedan({
+const marcellus = Marcellus({
   weight: '400',
   subsets: ['latin'],
   display: 'swap',
@@ -21,7 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={roboto.className}>
+      <body className={marcellus.className}>
         <NextUIProvider>{children}</NextUIProvider>
       </body>
     </html>

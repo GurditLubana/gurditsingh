@@ -1,6 +1,8 @@
 
+import Experience from "./components/Experience";
 import LandingPage from "./components/LandingPage";
 import Navigationbar from "./components/Navigationbar";
+import Skills from "./components/Skills";
 
 export default function Home() {
   return (
@@ -8,6 +10,9 @@ export default function Home() {
     <main className="min-h-screen">
       <Navigationbar/>
       <LandingPage/>
+      <Skills/>
+      <Experience/>
+
     </main>
   );
 }
