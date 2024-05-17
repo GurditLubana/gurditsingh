@@ -19,7 +19,7 @@ function MyInfo() {
         <div className="mt-6">
           <Link
             className="py-2 hover:opacity-75 transition-opacity duration-300 me-6 px-6 rounded-sm border-solid border-2 border-amber-200 flex items-center justify-center"
-            href="#"
+            href="https://gurditlubana.github.io/resume.pdf"
           >
             <p className="text-amber-300">Resume</p>
           </Link>

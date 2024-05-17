@@ -57,7 +57,7 @@ function Navigationbar() {
             </Link>
           </NavbarItem>
           <NavbarItem>
-            <Link href="#">Skills</Link>
+            <Link href="#skillSection">Skills</Link>
           </NavbarItem>
           <NavbarItem>
             <Link href="#">Projects</Link>
@@ -66,7 +66,7 @@ function Navigationbar() {
             <Link href="#">Education</Link>
           </NavbarItem>
           <NavbarItem>
-            <Link href="#">Experience</Link>
+            <Link href="#experienceSection">Experience</Link>
           </NavbarItem>
         </NavbarContent>
         <NavbarContent justify="end">
