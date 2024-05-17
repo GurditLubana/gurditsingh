@@ -11,21 +11,25 @@ function Experience() {
           companyName="Wawanesa Insurance Group"
           role="Administrative Assistant"
           date="February 2023 - Present"
+          logoUrl="/images/wawanesa.png"
         />
         <ExperienceCard
           companyName="Manitoba Government"
           role="Data Analyst Intern"
           date="April 2023 - September 2023"
+          logoUrl="/images/manitoba-gov.png"
         />
         <ExperienceCard
           companyName="University of Manitoba"
           role="Undergraduate Research Assistant in Computational Mathematics"
           date="January 2022 - September 2022"
+          logoUrl="/images/uofm-logo.png"
         />
         <ExperienceCard
           companyName="Air Canada"
           role="Security Officer"
           date="January 2021 - January 2022"
+          logoUrl="/images/aircanda.png"
         />
       </div>
     </div>
