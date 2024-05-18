@@ -14,7 +14,11 @@ const config: Config = {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-      },
+          // circularLight: 'repeating-radial-gradient( #000000,#000000 5px,#FEFEFE 5px,#FEFEFE 10px);'
+        },
+      animation:{
+        'spin-slow': 'spin 8s linear infinite',
+      }
     },
   },
   darkMode: "class",
