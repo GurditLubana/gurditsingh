@@ -83,7 +83,7 @@ function Navigationbar() {
               href="#"
             >
               <Image
-                src="/images/chatSVG.svg"
+                src="/svg/chatSVG.svg"
                 alt="chat"
                 width={15}
                 height={10}

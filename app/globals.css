@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
+body{
   color: #fff;
   background-color: #222230;
 }
@@ -48,8 +48,8 @@ body {
 .circularLight{
   background: repeating-radial-gradient(
     white,
-    white 5px,
+    white 1px,
     #222230 5px,
-    #222230 150px
+    #222230 100px
   );
 }
