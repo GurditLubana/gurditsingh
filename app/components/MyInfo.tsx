@@ -4,9 +4,13 @@ import Typewriter from "typewriter-effect";
 
 //Add a typewriter effect
 
-function MyInfo() {
+interface MyinfoProps{
+  classProp : string
+}
+
+function MyInfo({classProp}: MyinfoProps) {
   return (
-    <div className="grid grid-cols-1 h-full w-full">
+    <div className={`grid grid-cols-1 h-full w-full ${classProp}`}>
       <div className="flex flex-col items-start justify-center p-5 m-auto rounded-lg max-w-2xl">
         <h1 className="text-8xl text-amber-300 font-bold mb-2">Gurdit Singh</h1>
         <p className="text-xl text-amber-200 font-semibold ">
@@ -20,6 +24,7 @@ function MyInfo() {
           <Link
             className="py-2 hover:opacity-75 transition-opacity duration-300 me-6 px-6 rounded-sm border-solid border-2 border-amber-200 flex items-center justify-center"
             href="https://gurditlubana.github.io/resume.pdf"
+            target="_blank"
           >
             <p className="text-amber-300">Resume</p>
           </Link>

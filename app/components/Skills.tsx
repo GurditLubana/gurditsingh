@@ -38,13 +38,13 @@ function Skill({ name, x, y, logoPath }: SkillProps) {
 function Skills() {
   return (
     <div id="skillSection">
-      <h2 className="font-bold text-6xl md:mb-12 text-center"></h2>
+      <h2 className="font-bold text-6xl md:mb-12 text-center "></h2>
       <div className="w-full h-screen relative flex items-center justify-center rounded-full circularLight">
         <motion.div
           className="flex items-center justify-center rounded-full font-semibold bg-dark text-light p-4cursor-pointer"
          
         >
-                <h2 className="font-bold text-6xl text-center">Skills</h2>
+                <h2 className="font-bold text-6xl text-center text-amber-300">Skills</h2>
 
         </motion.div>
         <Skill name="HTML" x="-20vw" y="2vw" logoPath="/svg/html-1.svg" />
