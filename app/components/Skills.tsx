@@ -24,8 +24,8 @@ function Skill({ name, x, y }: SkillProps) {
 
 function Skills() {
   return (
-    <>
-      <h2 className="font-bold text-8xl mt-64 w-full text-center">Skills</h2>
+    <div id="skillSection">
+      <h2 className="font-bold text-8xl  w-full text-center">Skills</h2>
       <div className="w-full h-screen relative flex items-center justify-center rounded-full circularLight">
       
         <motion.div
@@ -42,7 +42,7 @@ function Skills() {
         <Skill name="Python" x="-15vw" y="0vw" />
         <Skill name="Java" x="15vw" y="-15vw" />
       </div>
-    </>
+    </div>
   );
 }
 

@@ -47,9 +47,9 @@ body {
 
 .circularLight{
   background: repeating-radial-gradient(
-    black,
-    black 5px,
+    white,
     white 5px,
-    white 10px
+    #222230 5px,
+    #222230 150px
   );
 }
