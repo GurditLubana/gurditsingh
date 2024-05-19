@@ -19,12 +19,12 @@ function ProjectCard({ image, title, description, liveLink, codeLink } : Project
       whileHover={{ scale: 1.15 }}
     >
       <Image src={image} alt={title} width={600} height={400} className="w-full h-full object-cover" />
-      <div className="absolute inset-0 bg-black bg-opacity-80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-between p-4">
+      <div className="absolute inset-0 bg-black bg-opacity-90 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-between p-4">
         <div className="text-white text-lg">{title}</div>
         <div className="text-white text-sm">{description}</div>
         <div className="flex space-x-4">
-          <a href={liveLink} target="_blank" className="bg-blue-500 text-white px-4 py-2 rounded">Live</a>
-          <a href={codeLink} target="_blank" className="bg-green-500 text-white px-4 py-2 rounded">Code</a>
+          <Link href={liveLink} target="_blank" className="bg-blue-500 text-white px-4 py-2 rounded">Live</Link>
+          <Link href={codeLink} target="_blank" className="bg-green-500 text-white px-4 py-2 rounded">Code</Link>
         </div>
       </div>
     </motion.div>
