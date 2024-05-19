@@ -15,10 +15,10 @@ interface ProjectCardProps {
 function ProjectCard({ image, title, description, liveLink, codeLink } : ProjectCardProps) {
   return (
     <motion.div
-      className="relative w-96 h-64 overflow-hidden rounded-lg group"
-      whileHover={{ scale: 1.05 }}
+      className="relative w-full h-full overflow-hidden rounded-lg group"
+      whileHover={{ scale: 1.15 }}
     >
-      <Image src={image} alt={title} width={400} height={200} className="w-full h-full object-cover" />
+      <Image src={image} alt={title} width={600} height={400} className="w-full h-full object-cover" />
       <div className="absolute inset-0 bg-black bg-opacity-80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-between p-4">
         <div className="text-white text-lg">{title}</div>
         <div className="text-white text-sm">{description}</div>
