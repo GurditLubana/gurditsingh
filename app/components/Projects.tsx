@@ -5,7 +5,7 @@ import { EmblaOptionsType } from "embla-carousel";
 
 const projects = [
   {
-    title: "SnackStats - Track Your Food Delivery Spending",
+    title: "SnackStats Chrome Extension- Track Food Delivery Spending",
     description:
       "SnackStats is your go-to Chrome extension for uncovering and managing your food delivery habits. Whether you order from Uber Eats, DoorDash, or SkipTheDishes, SnackStats provides a comprehensive report detailing your spending patterns and favorite restaurants.",
     image: "/images/SnackStats.jpg",
@@ -14,16 +14,16 @@ const projects = [
     codeLink: "https://github.com/GurditLubana/SnackStats--Chrome-Extension",
   },
   {
-    title: "ScreenScan - Instant Screenshot Search",
+    title: "ScreenScan Chrome Extension - Instant Screenshot Search",
     description:
-      "ScreenScan enhances the browsing experience by providing users with a swift, one-click solution to capture any visual content on their screen—be it text, images, or video stills—and seamlessly search for it using Google Lens and image search.",
+      "ScreenScan is a Chrome extension that enhances the browsing experience by providing users with a swift, one-click solution to capture any visual content on their screen—be it text, images, or video stills—and seamlessly search for it using Google Lens and image search.",
     image: "/images/screenscan.jpg",
     liveLink:
       "https://chromewebstore.google.com/detail/screenscan-instant-screen/aipbmogagldlnpfkhbkceoplgjppplac",
     codeLink: "https://github.com/GurditLubana/ScreenScan--Chrome-Extension",
   },
   {
-    title: "ChitChat - Chat Application",
+    title: "ChitChat - Web Chat Application",
     description:
       "Real-time chat application built with React, Node.js, and WebSocket, enabling instant messaging and broadcast capabilities across connected users. Designed to explore full-stack development practices and real-time data communication.",
     image: "/images/chitchat.png",

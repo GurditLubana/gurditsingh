@@ -22,11 +22,11 @@ function MyInfo({classProp}: MyinfoProps) {
         </p>
         <div className="mt-6">
           <Link
-            className="py-2 hover:opacity-75 transition-opacity duration-300 me-6 px-6 rounded-sm border-solid border-2 border-amber-200 flex items-center justify-center"
+            className="button font-bold text-xl"
             href="https://gurditlubana.github.io/resume.pdf"
             target="_blank"
           >
-            <p className="text-amber-300">Resume</p>
+           Resume
           </Link>
         </div>
       </div>
