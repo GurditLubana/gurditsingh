@@ -26,8 +26,8 @@ function ExperienceCard({
       variants={cardVariants}
       initial="hidden"
       whileInView="visible"
-      viewport={{ once: false, amount: 0.5 }}
-      transition={{ duration: 0.8, delay: 0.2 }}
+      viewport={{ once: false, amount: 0.1 }}
+      transition={{ duration: 1.5, delay: 0 }}
     >
       
       <div className="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-slate-300 text-slate-500 shadow shrink-0 md:order-1 "></div>
