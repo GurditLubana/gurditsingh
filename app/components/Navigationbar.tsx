@@ -60,7 +60,7 @@ function Navigationbar() {
             <Link href="#skillSection">Skills</Link>
           </NavbarItem>
           <NavbarItem>
-            <Link href="#">Projects</Link>
+            <Link href="#projectSection">Projects</Link>
           </NavbarItem>
           <NavbarItem>
             <Link href="#">Education</Link>
@@ -72,9 +72,9 @@ function Navigationbar() {
         <NavbarContent justify="end">
           <NavbarItem className="hidden lg:flex">
             <Link href="#">
-              {" "}
+              
               <span className="font-thin me-2">Mail: </span>
-              <span> gurditsingh7834@gmail.com</span>{" "}
+              <span> gurditsingh7834@gmail.com</span>
             </Link>
           </NavbarItem>
           <NavbarItem>
