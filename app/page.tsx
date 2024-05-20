@@ -1,4 +1,6 @@
 
+import Certificates from "./components/Certifications";
+import ContactMe from "./components/ContactMe";
 import Education from "./components/Education";
 import Experience from "./components/Experience";
 import LandingPage from "./components/LandingPage";
@@ -16,6 +18,8 @@ export default function Home() {
       <Education/>
       <Experience/>
       <Projects/>
+      <Certificates/>
+      <ContactMe/>
 
     </main>
   );

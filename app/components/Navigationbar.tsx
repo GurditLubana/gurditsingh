@@ -52,11 +52,6 @@ function Navigationbar() {
             <Link href="#">Home</Link>
           </NavbarItem>
           <NavbarItem>
-            <Link href="#" aria-current="page">
-              About me
-            </Link>
-          </NavbarItem>
-          <NavbarItem>
             <Link href="#skillSection">Skills</Link>
           </NavbarItem>
           <NavbarItem>
@@ -67,6 +62,11 @@ function Navigationbar() {
           </NavbarItem>
           <NavbarItem>
             <Link href="#experienceSection">Experience</Link>
+          </NavbarItem>
+          <NavbarItem>
+            <Link href="#certificationsSection" aria-current="page">
+              Certifications
+            </Link>
           </NavbarItem>
         </NavbarContent>
         <NavbarContent justify="end">
