@@ -2,6 +2,8 @@
 import React from "react";
 import ProjectCarousel from "./ProjectCarousel";
 import { EmblaOptionsType } from "embla-carousel";
+import Link from "next/link";
+import { motion } from "framer-motion";
 
 const projects = [
   {
@@ -33,28 +35,64 @@ const projects = [
   {
     title: "Student management Desktop Application",
     description:"This desktop application is a student management system in which user can manupulate all sort of student information present in the MySQL database (i.e. perform CRUD operations).",
-        image: "/images/SMDA.png",
+    image: "/images/SMDA.png",
     liveLink: "https://pythonbootcamp.com",
     codeLink: "https://github.com/GurditLubana/Student-mangement-Application/tree/main",
   },
   {
     title: "Weather Application",
     description:"Check the weather around you and all over the world at a glance. Rely on the accurate weather forecast and adjust your schedule to the weather coming in. You won’t even have to look out the window as the app will make you feel like you are already outside!",
-        image: "/images/weatherapp.png",
+    image: "/images/weatherapp.png",
     liveLink: "https://garrys-weather-app.netlify.app/",
     codeLink: "https://github.com/GurditLubana/Weather-Application?tab=readme-ov-file",
   },
 ];
 
+const fadeInUpVariants = {
+  hidden: { opacity: 0, y: 50 },
+  visible: { opacity: 1, y: 0 }
+};
+
 const Projects: React.FC = () => {
   const OPTIONS: EmblaOptionsType = { loop: true };
 
   return (
-    <div id="projectSection" className="w-full h-screen overflow-hidden">
-      <h1 className="text-6xl font-bold mt-4 my-9 text-amber-300 text-center">
+    <div id="projectSection" className="flex flex-col w-full h-screen overflow-hidden items-center">
+      <motion.h1
+        className="text-6xl font-bold mt-4 my-9 text-amber-300 text-center"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: false, amount: 0.5 }}
+        transition={{ duration: 1 }}
+        variants={fadeInUpVariants}
+      >
         Personal Projects
-      </h1>
-      <ProjectCarousel projects={projects} options={OPTIONS} />
+      </motion.h1>
+      <motion.div
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: false, amount: 0.5 }}
+        transition={{ duration: 1, staggerChildren: 0.3 }}
+        variants={fadeInUpVariants}
+        className="w-full"
+      >
+        <ProjectCarousel projects={projects} options={OPTIONS} />
+      </motion.div>
+      <motion.div
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: false, amount: 0.5 }}
+        transition={{ duration: 1, delay: 0.5 }}
+        variants={fadeInUpVariants}
+      >
+        <Link
+          className="button font-bold text-xl"
+          href="https://github.com/GurditLubana?tab=repositories"
+          target="_blank"
+        >
+          More Projects
+        </Link>
+      </motion.div>
     </div>
   );
 };

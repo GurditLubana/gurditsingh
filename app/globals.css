@@ -56,7 +56,7 @@ body{
 
 .button{
 
-  background-color: #191925;
+  background-color: #222230;
   padding-left: 1rem;
     padding-right: 1rem;
     padding-top: 0.5rem;
@@ -68,12 +68,13 @@ body{
 
 .button:hover{
   background-color: #fcd34d;
-  color: #191925;
+  color: #222230;
 }
 
 .embla {
   max-width: 51rem;
   margin: auto;
+  margin-bottom: 1rem;
   margin-top: 6rem;
   --slide-height: 19rem;
   --slide-spacing: 1rem;

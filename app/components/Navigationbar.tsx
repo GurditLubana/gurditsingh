@@ -73,7 +73,7 @@ function Navigationbar() {
           <NavbarItem className="hidden lg:flex">
             <Link href="#">
               
-              <span className="font-thin me-2">Mail: </span>
+              {/* <span className="font-thin me-2">Mail: </span> */}
               <span> gurditsingh7834@gmail.com</span>
             </Link>
           </NavbarItem>
