@@ -49,7 +49,7 @@ const projects = [
 ];
 
 const fadeInUpVariants = {
-  hidden: { opacity: 0, y: 50 },
+  hidden: { opacity: 0, y: 70 },
   visible: { opacity: 1, y: 0 }
 };
 
@@ -57,12 +57,12 @@ const Projects: React.FC = () => {
   const OPTIONS: EmblaOptionsType = { loop: true };
 
   return (
-    <div id="projectSection" className="flex flex-col w-full h-screen overflow-hidden items-center">
+    <div id="projectSection" className="w-full h-full my-9 overflow-hidden">
       <motion.h1
         className="text-6xl font-bold mt-4 my-9 text-amber-300 text-center"
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: false, amount: 0.5 }}
+        viewport={{ once: true, amount: 0.5 }}
         transition={{ duration: 1 }}
         variants={fadeInUpVariants}
       >
@@ -71,20 +71,13 @@ const Projects: React.FC = () => {
       <motion.div
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: false, amount: 0.5 }}
-        transition={{ duration: 1, staggerChildren: 0.3 }}
+        viewport={{ once: true, amount: 0.5 }}
+        transition={{ duration: 1, delay: 0.1 }}
         variants={fadeInUpVariants}
-        className="w-full"
+        className="w-full flex flex-col items-center "
       >
         <ProjectCarousel projects={projects} options={OPTIONS} />
-      </motion.div>
-      <motion.div
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: false, amount: 0.5 }}
-        transition={{ duration: 1, delay: 0.5 }}
-        variants={fadeInUpVariants}
-      >
+      
         <Link
           className="button font-bold text-xl"
           href="https://github.com/GurditLubana?tab=repositories"

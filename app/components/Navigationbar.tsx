@@ -63,7 +63,7 @@ function Navigationbar() {
             <Link href="#projectSection">Projects</Link>
           </NavbarItem>
           <NavbarItem>
-            <Link href="#">Education</Link>
+            <Link href="#educationSection">Education</Link>
           </NavbarItem>
           <NavbarItem>
             <Link href="#experienceSection">Experience</Link>
@@ -73,7 +73,6 @@ function Navigationbar() {
           <NavbarItem className="hidden lg:flex">
             <Link href="#">
               
-              {/* <span className="font-thin me-2">Mail: </span> */}
               <span> gurditsingh7834@gmail.com</span>
             </Link>
           </NavbarItem>

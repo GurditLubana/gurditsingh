@@ -1,4 +1,5 @@
 
+import Education from "./components/Education";
 import Experience from "./components/Experience";
 import LandingPage from "./components/LandingPage";
 import Navigationbar from "./components/Navigationbar";
@@ -12,6 +13,7 @@ export default function Home() {
       <Navigationbar/>
       <LandingPage/>
       <Skills/>
+      <Education/>
       <Experience/>
       <Projects/>
 
