@@ -62,7 +62,7 @@ const Projects: React.FC = () => {
         className="text-6xl font-bold mt-4 my-9 text-amber-300 text-center"
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, amount: 0.5 }}
+        viewport={{ once: true, amount: 0.2 }}
         transition={{ duration: 1 }}
         variants={fadeInUpVariants}
       >
@@ -71,8 +71,8 @@ const Projects: React.FC = () => {
       <motion.div
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, amount: 0.5 }}
-        transition={{ duration: 1, delay: 0.1 }}
+        viewport={{ once: false, amount: 0.2 }}
+        transition={{ duration: 0.7, delay: 0.2 }}
         variants={fadeInUpVariants}
         className="w-full flex flex-col items-center "
       >

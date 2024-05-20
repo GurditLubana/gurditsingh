@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 const fadeInUpVariants = {
-  hidden: { opacity: 0, y: 70 },
+  hidden: { opacity: 0, y: 50 },
   visible: { opacity: 1, y: 0 },
 };
 
@@ -19,7 +19,7 @@ function Education() {
         className="text-6xl font-bold my-9 text-amber-300 text-center"
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, amount: 0.5 }}
+        viewport={{ once: true, amount: 0.1 }}
         transition={{ duration: 1 }}
         variants={fadeInUpVariants}
       >
@@ -29,7 +29,7 @@ function Education() {
         className="darkBg p-8 rounded-lg w-3/4 md:w-5/6 flex flex-col md:flex-row items-center shadow-lg"
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: false, amount: 0.5 }}
+        viewport={{ once: false, amount: 0.1 }}
         transition={{ duration: 1 }}
         variants={fadeInUpVariants}
       >

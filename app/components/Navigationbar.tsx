@@ -38,11 +38,11 @@ function Navigationbar() {
           />
           <NavbarBrand>
             <Image
-              src="/images/signature.png"
+              src="/images/siteLogo.png"
               alt="chat"
-              width={400}
+              width={100}
               height={40}
-              className="mr-2"
+              className="ms-9 mr-2"
             />
           </NavbarBrand>
         </NavbarContent>
