@@ -54,7 +54,7 @@ function Certifications(){
         {certifications.map((cert, index) => (
           <motion.div
             key={index}
-            className="bg-slate-700 p-2 pb-4 rounded-lg shadow-lg flex flex-col items-center"
+            className="darkBg p-2 pb-4 rounded-lg shadow-lg flex flex-col items-center"
             whileHover={{ scale: 1.05 }}
           >
             <Image src={cert.logo} alt={`${cert.issuer} logo`} width={300} height={100} className="mb-4"/>
