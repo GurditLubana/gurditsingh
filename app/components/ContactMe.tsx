@@ -1,7 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
+import Image from "next/image";
 import React from 'react';
-// import { FaInstagram, FaLinkedin, FaGithub, FaTwitter } from "react-icons/fa";
 
 const fadeInUpVariants = {
   hidden: { opacity: 0, y: 70 },
@@ -22,18 +22,25 @@ function ContactMe() {
         Contact Me
       </motion.h1>
       <div className="flex flex-col md:flex-row w-3/4 mx-auto justify-between">
-        {/* Left Side */}
+       
         <div className="w-full md:w-1/2 flex flex-col items-start mb-8 md:mb-0">
-          <h2 className="text-2xl font-semibold text-light mb-4">Email: your.email@example.com</h2>
+          <h2 className="text-2xl font-semibold text-light mb-4">Email: gurditsingh7834@gmail.com</h2>
           <div className="flex space-x-4">
-            {/* <a href="https://instagram.com/yourprofile" target="_blank" rel="noopener noreferrer" className="text-2xl text-amber-300"><FaInstagram /></a>
-            <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer" className="text-2xl text-amber-300"><FaLinkedin /></a>
-            <a href="https://github.com/yourprofile" target="_blank" rel="noopener noreferrer" className="text-2xl text-amber-300"><FaGithub /></a>
-            <a href="https://twitter.com/yourprofile" target="_blank" rel="noopener noreferrer" className="text-2xl text-amber-300"><FaTwitter /></a> */}
+          <a href="https://instagram.com/yourprofile" target="_blank" rel="noopener noreferrer" className="hover:scale-110 hover:opacity-1">
+              <Image src="/svg/instagram.svg" alt="Instagram" width={30} height={30}  />
+            </a>
+            <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer" className="hover:scale-110">
+              <Image src="/svg/linkedin.svg" alt="LinkedIn" width={30} height={30} />
+            </a>
+            <a href="https://github.com/yourprofile" target="_blank" rel="noopener noreferrer" className="hover:scale-110">
+              <Image src="/svg/github.svg" alt="GitHub" width={30} height={30} className="transition hover:filter hover:invert hover:brightness-100" />
+            </a>
+            <a href="https://twitter.com/yourprofile" target="_blank" rel="noopener noreferrer" className="hover:scale-110">
+              <Image src="/svg/twitter.svg" alt="Twitter" width={35} height={37} />
+            </a>
           </div>
         </div>
 
-        {/* Right Side */}
         <div className="w-full md:w-1/2">
           <form className="flex flex-col space-y-4">
             <input

@@ -79,7 +79,7 @@ function Navigationbar() {
           <NavbarItem>
             <Link
               className="hover:bg-amber-400 py-4 ms-6 px-6 rounded-sm bg-amber-300 text-black flex items-center justify-center"
-              href="#"
+              href="#contactMeSection"
             >
               <Image
                 src="/svg/chatSVG.svg"
