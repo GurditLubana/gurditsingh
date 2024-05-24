@@ -1,0 +1,23 @@
+<svg
+  version="1.1"
+  id="Layer_1"
+  xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  viewBox="0 0 64 64"
+  enable-background="new 0 0 64 64"
+  xml:space="preserve"
+>
+  <g>
+    <rect
+      x="12"
+      y="20"
+      fill="#F76D57"
+      width="40"
+      height="24"
+    />
+    <polyline
+      fill="#FFFFFF"
+      points="12,20 32,36 52,20"
+    />
+  </g>
+</svg>
