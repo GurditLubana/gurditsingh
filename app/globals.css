@@ -2,10 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
+body, :root{
   color: #fff;
   background-color: #222230;
 }
+
 
 .navbar, .landingPage, .darkBg{
   background-color: #191925;
@@ -13,6 +14,11 @@ body{
 
 .navbar header {
   max-width: none;
+}
+
+.navbar ul[data-justify="start"] li[data-active="true"] a{
+  color: #fcd34d;
+  font-weight: bold;
 }
 
 .navbar ul[data-justify="start"] a {

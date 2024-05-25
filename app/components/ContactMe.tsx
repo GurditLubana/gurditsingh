@@ -22,7 +22,7 @@ function ContactMe() {
     }
   }, [state.succeeded]);
 
-  async function onSubmit(event: React.FormEvent<HTMLFormElement>){
+  async function onSubmit(event: any){
     event.preventDefault();
     await handleSubmit(event);
   };
@@ -41,7 +41,7 @@ function ContactMe() {
       </motion.h1>
       <div className="flex flex-col md:flex-row w-3/4 mx-auto justify-between">
         <div className="w-full md:w-1/2 flex flex-col items-start mb-8 md:mb-0">
-        <Image src="/images/messageSentImg.png" alt="Mail Animation" width={300} height={300} />
+        <Image src="/images/messageSentImg.png" alt="Mail Animation" width={350} height={400} />
         </div>
 
         <div className="w-full md:w-1/2 md:mt-12">
@@ -92,10 +92,11 @@ function ContactMe() {
               />
               <textarea
                 name="message"
-                placeholder="Your Message"
+                placeholder="Type your message here "
+                rows= {5}
                 required
-                className="p-2 rounded bg-slate-700 text-white"
-              ></textarea>
+                className="p-2 rounded bg-slate-700 text-white h-full"
+                ></textarea>
               <ValidationError 
                 prefix="Message" 
                 field="message"
