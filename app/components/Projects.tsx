@@ -57,9 +57,9 @@ const Projects: React.FC = () => {
   const OPTIONS: EmblaOptionsType = { loop: true };
 
   return (
-    <div id="projectSection" className="w-full h-full my-9 overflow-hidden">
+    <div id="projectSection" className="w-full h-full overflow-hidden">
       <motion.h1
-        className="text-6xl font-bold mt-4 my-9 text-amber-300 text-center"
+        className="text-6xl font-bold mt-16 text-amber-300 text-center"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.2 }}

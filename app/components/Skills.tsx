@@ -35,8 +35,8 @@ function Skill({ name, x, y, logoPath }: SkillProps) {
 
 function Skills() {
   return (
-    <div id="skillSection" className="mt-64">
-      <div className="md:h-[10vh] "></div>
+    <div id="skillSection" className="mt-16">
+      <div className="md:h-[20vh] "></div>
       <div className="w-full h-[80vh] relative flex items-center justify-center rounded-full circularLight">
         <motion.div
           className="flex items-center justify-center rounded-full font-semibold bg-dark text-light p-2 cursor-pointer"

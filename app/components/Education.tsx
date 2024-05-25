@@ -13,7 +13,7 @@ function Education() {
   return (
     <div
       id="educationSection"
-      className="w-full flex flex-col items-center py-16"
+      className="w-full  flex flex-col items-center py-16"
     >
       <motion.h1
         className="text-6xl font-bold my-9 text-amber-300 text-center"
