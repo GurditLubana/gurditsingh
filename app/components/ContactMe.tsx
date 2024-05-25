@@ -18,7 +18,7 @@ function ContactMe() {
       setIsSubmitted(true);
       setTimeout(() => {
         setIsSubmitted(false);
-      }, 3000);
+      }, 2000);
     }
   }, [state.succeeded]);
 

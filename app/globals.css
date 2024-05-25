@@ -2,21 +2,29 @@
 @tailwind components;
 @tailwind utilities;
 
-body, :root{
+body,
+:root {
   color: #fff;
   background-color: #222230;
 }
 
-
-.navbar, .landingPage, .darkBg{
+.navbar,
+.landingPage,
+.darkBg {
   background-color: #191925;
+}
+
+.navbar{
+  position: fixed;
+  height: 4rem;
 }
 
 .navbar header {
   max-width: none;
+
 }
 
-.navbar ul[data-justify="start"] li[data-active="true"] a{
+.navbar ul[data-justify="start"] li[data-active="true"] a {
   color: #fcd34d;
   font-weight: bold;
 }
@@ -46,12 +54,12 @@ body, :root{
   right: 0;
 }
 
+
 .text-primary {
   color: white;
 }
 
-
-.circularLight{
+.circularLight {
   background: repeating-radial-gradient(
     rgb(248, 248, 204),
     rgb(248, 248, 204) 5px,
@@ -60,19 +68,18 @@ body, :root{
   );
 }
 
-.button{
-
+.button {
   background-color: #222230;
   padding-left: 1rem;
-    padding-right: 1rem;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
   border: #fcd34d solid 2px;
   border-radius: 10px;
   color: #fcd34d;
 }
 
-.button:hover{
+.button:hover {
   background-color: #fcd34d;
   color: #222230;
 }
@@ -91,7 +98,6 @@ body, :root{
   width: 100%;
 }
 .embla__container {
-  
   backface-visibility: hidden;
   display: flex;
   touch-action: pan-y pinch-zoom;
@@ -102,11 +108,9 @@ body, :root{
   flex: 0 0 var(--slide-size);
   min-width: 0;
   padding-left: var(--slide-spacing);
- 
 }
 
 .embla__controls {
-  
   display: flex;
   grid-template-columns: auto 1fr;
   justify-content: space-between;
@@ -154,7 +158,6 @@ body, :root{
 }
 
 .embla__button__svg:hover {
-  
   border: #fcd34d solid 2px;
   background-color: #fcd34d;
   color: #222230;
@@ -184,7 +187,6 @@ body, :root{
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  
 }
 .embla__dot:after {
   box-shadow: inset 0 0 0 0.2rem var(--detail-medium-contrast);
@@ -193,15 +195,14 @@ body, :root{
   border-radius: 50%;
   display: flex;
   align-items: center;
-  content: '';
+  content: "";
 }
-.embla__dot--selected{
+.embla__dot--selected {
   background-color: #fcd34d;
 }
 .embla__slide__number {
   backface-visibility: hidden;
 }
-
 
 @keyframes followCurve {
   0% {
@@ -219,9 +220,6 @@ body, :root{
 .envelope {
   animation: followCurve 3s linear forwards;
 }
-
-
-
 
 .send {
   transform: translateY(-20vh);

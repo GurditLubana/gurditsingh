@@ -28,7 +28,7 @@ function Navigationbar() {
   return (
     <div>
       <Navbar
-        className="navbar pt-4 pb-2 flex justify-between"
+        className="navbar pt-4 pb-2 flex justify-between bg-dark"
         onMenuOpenChange={setIsMenuOpen}
       >
         <NavbarContent>
@@ -46,8 +46,8 @@ function Navigationbar() {
             />
           </NavbarBrand>
         </NavbarContent>
-
         <NavbarContent className="hidden sm:flex gap-6" justify="start">
+
           <NavbarItem isActive>
             <Link href="#">Home</Link>
           </NavbarItem>
@@ -72,7 +72,6 @@ function Navigationbar() {
         <NavbarContent justify="end">
           <NavbarItem className="hidden lg:flex">
             <Link href="#">
-              
               <span> gurditsingh7834@gmail.com</span>
             </Link>
           </NavbarItem>
@@ -105,7 +104,6 @@ function Navigationbar() {
                 }
                 className="w-full"
                 href="#"
-                
               >
                 {item}
               </Link>
