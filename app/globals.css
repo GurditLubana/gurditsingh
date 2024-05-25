@@ -201,11 +201,17 @@ body{
   0% {
     transform: translateY(0);
   }
+  10% {
+    transform: translateX(-30px);
+  }
+  20% {
+    transform: translateY(-30px);
+  }
   50% {
     transform: translateY(-10px);
   }
   100% {
-    transform: translateY(0);
+    transform: translateX(100vw);
   }
 }
 
@@ -219,7 +225,7 @@ body{
 }
 
 .envelope {
-  animation: envelope 1s infinite;
+  animation: envelope 1s forwards;
 }
 
 .send {

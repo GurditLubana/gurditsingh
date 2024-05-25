@@ -1,7 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useForm, ValidationError } from '@formspree/react';
 
 const fadeInUpVariants = {
@@ -13,15 +13,18 @@ function ContactMe() {
   const [state, handleSubmit] = useForm("mzbnqevo");
   const [isSubmitted, setIsSubmitted] = useState(false);
 
-  const onSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
-    event.preventDefault();
-    await handleSubmit(event);
+  useEffect(() => {
     if (state.succeeded) {
       setIsSubmitted(true);
       setTimeout(() => {
         setIsSubmitted(false);
-      }, 3000);
+      }, 5000);
     }
+  }, [state.succeeded]);
+
+  async function onSubmit(event: React.FormEvent<HTMLFormElement>){
+    event.preventDefault();
+    await handleSubmit(event);
   };
 
   return (
@@ -37,33 +40,18 @@ function ContactMe() {
         Contact Me
       </motion.h1>
       <div className="flex flex-col md:flex-row w-3/4 mx-auto justify-between">
-      <Image src="/images/messageSentImg.png" alt="Mail Animation" width={200} height={200} />
         <div className="w-full md:w-1/2 flex flex-col items-start mb-8 md:mb-0">
-          <h2 className="text-2xl font-semibold text-light mb-4">Email: gurditsingh7834@gmail.com</h2>
-          <div className="flex space-x-4">
-            <a href="https://instagram.com/yourprofile" target="_blank" rel="noopener noreferrer" className="hover:scale-110 hover:opacity-1">
-              <Image src="/svg/instagram.svg" alt="Instagram" width={30} height={30} />
-            </a>
-            <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer" className="hover:scale-110">
-              <Image src="/svg/linkedin.svg" alt="LinkedIn" width={30} height={30} />
-            </a>
-            <a href="https://github.com/yourprofile" target="_blank" rel="noopener noreferrer" className="hover:scale-110">
-              <Image src="/svg/github.svg" alt="GitHub" width={30} height={30} className="transition hover:filter hover:invert hover:brightness-100" />
-            </a>
-            <a href="https://twitter.com/yourprofile" target="_blank" rel="noopener noreferrer" className="hover:scale-110">
-              <Image src="/svg/twitter.svg" alt="Twitter" width={35} height={37} />
-            </a>
-          </div>
+        <Image src="/images/messageSentImg.png" alt="Mail Animation" width={300} height={300} />
         </div>
 
-        <div className="w-full md:w-1/2">
+        <div className="w-full md:w-1/2 md:mt-12">
           {isSubmitted ? (
             <div className="flex flex-col items-center">
               <motion.div
                 className="envelope"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
-                transition={{ duration: 1 }}
+                transition={{ duration: 1.5 }}
               >
                 <Image src="/svg/mail-animation.svg" alt="Mail Animation" width={200} height={200} />
               </motion.div>
@@ -71,7 +59,7 @@ function ContactMe() {
                 className="send mt-2"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
-                transition={{ duration: 3 }}
+                transition={{ duration: 1 }}
               >
                 <p className="text-4xl font-semibold text-amber-300">Message Sent!</p>
               </motion.div>
@@ -113,7 +101,7 @@ function ContactMe() {
                 field="message"
                 errors={state.errors}
               />
-              <button type="submit" disabled={state.submitting} className="p-2 rounded bg-amber-300 text-black font-bold">Send Message</button>
+              <button type="submit" disabled={state.submitting} className="button font-bold">Send Message</button>
             </form>
           )}
         </div>
