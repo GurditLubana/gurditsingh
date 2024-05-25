@@ -18,7 +18,7 @@ function ContactMe() {
       setIsSubmitted(true);
       setTimeout(() => {
         setIsSubmitted(false);
-      }, 5000);
+      }, 3000);
     }
   }, [state.succeeded]);
 
@@ -51,9 +51,9 @@ function ContactMe() {
                 className="envelope"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
-                transition={{ duration: 1.5 }}
+                transition={{ duration: 3 }}
               >
-                <Image src="/svg/mail-animation.svg" alt="Mail Animation" width={200} height={200} />
+                <Image src="/images/paperPlane.png" alt="Mail Animation" width={200} height={200} />
               </motion.div>
               <motion.div
                 className="send mt-2"
@@ -61,7 +61,7 @@ function ContactMe() {
                 animate={{ opacity: 1 }}
                 transition={{ duration: 1 }}
               >
-                <p className="text-4xl font-semibold text-amber-300">Message Sent!</p>
+                <p className="text-4xl font-semibold text-amber-300">Message Delivered!</p>
               </motion.div>
             </div>
           ) : (

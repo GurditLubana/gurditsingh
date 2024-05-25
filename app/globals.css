@@ -197,39 +197,26 @@ body{
 }
 
 
-@keyframes envelope {
+@keyframes followCurve {
   0% {
-    transform: translateY(0);
+    transform: translate(0, 0);
   }
-  10% {
-    transform: translateX(-30px);
-  }
-  20% {
-    transform: translateY(-30px);
-  }
-  50% {
-    transform: translateY(-10px);
-  }
-  100% {
-    transform: translateX(100vw);
-  }
-}
 
-@keyframes send {
-  0% {
-    transform: translateX(0);
+  50% {
+    transform: translate(50vw, -50vh);
   }
   100% {
-    transform: translateX(100vw);
+    transform: translate(100vw, -50vh);
   }
 }
 
 .envelope {
-  animation: envelope 1s forwards;
+  animation: followCurve 3s linear forwards;
 }
 
+
+
+
 .send {
-  animation-name: send;
-  animation-duration: 8s;
-  animation-fill-mode: forwards;
+  transform: translateY(-20vh);
 }
