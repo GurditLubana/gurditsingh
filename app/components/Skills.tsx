@@ -8,12 +8,13 @@ interface SkillProps {
   x: string;
   y: string;
   logoPath: string;
+  imgClass?: string;
 }
 
-function Skill({ name, x, y, logoPath }: SkillProps) {
+function Skill({ name, x, y, logoPath, imgClass }: SkillProps) {
   return (
     <motion.div
-      className="flex items-center justify-center rounded-full font-semibold bg-slate-700 text-light py-2 px-4 shadow-dark cursor-pointer absolute"
+      className="flex items-center justify-center rounded-full font-bold darkBg text-light py-2 md:py-4 px-4 md:px-6 shadow-dark cursor-pointer absolute"
       whileHover={{ scale: 1.15 }}
       initial={{ x: 0, y: 0 }}
       whileInView={{ x, y }}
@@ -25,7 +26,7 @@ function Skill({ name, x, y, logoPath }: SkillProps) {
           alt="skill Icon"
           width={20}
           height={20}
-          className="mr-2"
+          className= {`h-8 w-8 mr-2 md:mr-4 ${imgClass}`}
         />
         <span>{name}</span>
       </div>
@@ -41,7 +42,7 @@ function Skills() {
         <motion.div
           className="flex items-center justify-center rounded-full font-semibold bg-dark text-light p-2 cursor-pointer"
         >
-          <h2 className="font-bold text-6xl text-center text-amber-300">Skills</h2>
+          <h2 className="font-bold text-5xl md:text-6xl text-center text-amber-300">Skills</h2>
         </motion.div>
         <Skill name="HTML" x="-15vw" y="2vw" logoPath="/svg/html-1.svg" />
         <Skill name="CSS" x="-5vw" y="-8vw" logoPath="/svg/css-3.svg" />
@@ -66,8 +67,8 @@ function Skills() {
         />
         <Skill name="MySQL" x="25vw" y="-5vw" logoPath="/svg/mysql-logo.svg" />
         <Skill name="Postman" x="0vw" y="-15vw" logoPath="/svg/postman.svg" />
-        <Skill name="MS SQL Server" x="-30vw" y="0vw" logoPath='/svg/microsoft-sql-server-1.svg' />
-        <Skill name="NextJS" x="-15vw" y="12vw" logoPath="/svg/next-js.svg" />
+        <Skill name="MS SQL Server" x="-30vw" y="0vw" logoPath='/svg/microsoft-sql-server-1.svg' imgClass="h-10 w-10 filter invert"/>
+        <Skill name="NextJS" x="-15vw" y="12vw" logoPath="/svg/next-js.svg" imgClass="filter invert"/>
         <Skill
           name="PostgreSQL"
           x="-30vw" y="12vw"
@@ -83,6 +84,7 @@ function Skills() {
           x="-30vw"
           y="-12vw"
           logoPath="/svg/express-109.svg"
+          imgClass="h-10 w-10 filter invert"
         />
       </div>
     </div>

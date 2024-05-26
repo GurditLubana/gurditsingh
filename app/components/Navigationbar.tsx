@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useState, useEffect } from "react";
 import {
   Navbar,
   NavbarBrand,
@@ -9,22 +9,41 @@ import {
   NavbarMenu,
   NavbarMenuItem,
 } from "@nextui-org/navbar";
-
 import Image from "next/image";
 import Link from "next/link";
 
 function Navigationbar() {
-  const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [activeSection, setActiveSection] = useState("Home");
 
   const menuItems = [
-    "Home",
-    "About me",
-    "Skills",
-    "Projects",
-    "Education",
-    "Experience",
-    "Certificates",
+    { name: "Home", href: "#home" },
+    { name: "Skills", href: "#skillSection" },
+    { name: "Education", href: "#educationSection" },
+    { name: "Experience", href: "#experienceSection" },
+    { name: "Projects", href: "#projectSection" },
+    { name: "Certificates", href: "#certificationsSection" },
   ];
+
+  const handleScroll = () => {
+    const sections = menuItems.map((item) => document.querySelector(item.href) as HTMLElement);
+    const scrollPosition = window.scrollY + window.innerHeight / 2;
+  
+    sections.forEach((section, index) => {
+      if (section && section.offsetTop <= scrollPosition && section.offsetTop + section.offsetHeight > scrollPosition) {
+        setActiveSection(menuItems[index].name);
+      }
+    });
+  };
+  
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+  
+
   return (
     <div>
       <Navbar
@@ -47,27 +66,11 @@ function Navigationbar() {
           </NavbarBrand>
         </NavbarContent>
         <NavbarContent className="hidden sm:flex gap-6" justify="start">
-
-          <NavbarItem isActive>
-            <Link href="#">Home</Link>
-          </NavbarItem>
-          <NavbarItem>
-            <Link href="#skillSection">Skills</Link>
-          </NavbarItem>
-          <NavbarItem>
-            <Link href="#projectSection">Projects</Link>
-          </NavbarItem>
-          <NavbarItem>
-            <Link href="#educationSection">Education</Link>
-          </NavbarItem>
-          <NavbarItem>
-            <Link href="#experienceSection">Experience</Link>
-          </NavbarItem>
-          <NavbarItem>
-            <Link href="#certificationsSection" aria-current="page">
-              Certifications
-            </Link>
-          </NavbarItem>
+          {menuItems.map((item) => (
+            <NavbarItem key={item.name} isActive={activeSection === item.name}>
+              <Link href={item.href}>{item.name}</Link>
+            </NavbarItem>
+          ))}
         </NavbarContent>
         <NavbarContent justify="end">
           <NavbarItem className="hidden lg:flex">
@@ -91,14 +94,11 @@ function Navigationbar() {
             </Link>
           </NavbarItem>
         </NavbarContent>
-        <NavbarMenu className="menuNavbar text-white ">
+        <NavbarMenu className="menuNavbar text-white">
           {menuItems.map((item, index) => (
-            <NavbarMenuItem key={`${item}-${index}`}>
-              <Link
-                className="w-full"
-                href="#"
-              >
-                {item}
+            <NavbarMenuItem key={`${item.name}-${index}`}>
+              <Link className="w-full" href={item.href}>
+                {item.name}
               </Link>
             </NavbarMenuItem>
           ))}

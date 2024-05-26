@@ -23,7 +23,7 @@ function MyInfo({ classProp }: MyinfoProps) {
             
     deleteSpeed: 30, 
 
-            wrapperClassName: "text-2xl text-amber-200 font-normal",
+            wrapperClassName: "text-2xl md:text-3xl text-amber-200 font-normal",
             
           }}
 
