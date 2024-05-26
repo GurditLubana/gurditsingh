@@ -37,7 +37,7 @@ function MyInfo({ classProp }: MyinfoProps) {
         <div className="flex space-x-4 mt-8 md:mt-16">
           <Link
             className="button font-bold text-lg md:text-xl me-8"
-            href="https://gurditlubana.github.io/resume.pdf"
+            href="https://gurditlubana.github.io/Gurdit_Singh_Resume_2024.pdf"
             target="_blank"
           >
             Resume
