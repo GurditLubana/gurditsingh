@@ -21,6 +21,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+      <link rel="icon" href="/images/turban.png" />
+      </head>
       <body className={marcellus.className}>
         <NextUIProvider>{children}</NextUIProvider>
       </body>
