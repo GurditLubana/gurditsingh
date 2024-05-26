@@ -65,7 +65,25 @@ const skills = [
     logoPath: "/svg/express-109.svg",
     imgClass: "h-10 w-10 filter invert",
   },
+  { name: "AWS", x: "30vw", y: "0vw", logoPath: "/svg/aws.svg", imgClass: "filter invert",},
+  { name: "MongoDB", x: "-41vw", y: "-5vw", logoPath: "/svg/mongoDB.svg" },
+  { name: "Git", x: "35vw", y: "-8vw", logoPath: "/svg/git.svg" },
+
 ];
+
+
+const skillGridVariants = {
+  hidden: { opacity: 0, scale: 0.8, rotate: -10 },
+  visible: { 
+    opacity: 1, 
+    scale: 1, 
+    rotate: 0,
+    transition: {
+      duration: 0.5,
+      ease: 'easeOut'
+    }
+  }
+}
 
 function Skills() {
   return (
@@ -96,14 +114,27 @@ function Skills() {
             Skills
           </h2>
         </motion.div>
-      <div className="md:hidden grid grid-cols-4 gap-4 px-4">
+        <motion.div 
+        className="md:hidden grid grid-cols-4 gap-4 px-4"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: false, amount: 0.2 }}
+        variants={skillGridVariants}
+      >
         {skills.map((skill, index) => (
-          <div key={index} className="flex flex-col items-center">
+          <motion.div 
+            key={index} 
+            className="flex flex-col items-center"
+            variants={skillGridVariants}
+            whileInView="visible"
+            viewport={{ once: false, amount: 0.2 }}
+
+          >
             <Image src={skill.logoPath} alt="skill Icon" width={40} height={40} className={skill.imgClass} />
             <span className="mt-2 text-center">{skill.name}</span>
-          </div>
+          </motion.div>
         ))}
-      </div>
+      </motion.div>
     </div>
    
   );
