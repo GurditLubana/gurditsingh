@@ -91,17 +91,10 @@ function Navigationbar() {
             </Link>
           </NavbarItem>
         </NavbarContent>
-        <NavbarMenu className="menuNavbar text-black ">
+        <NavbarMenu className="menuNavbar text-white ">
           {menuItems.map((item, index) => (
             <NavbarMenuItem key={`${item}-${index}`}>
               <Link
-                color={
-                  index === 2
-                    ? "primary"
-                    : index === menuItems.length - 1
-                    ? "danger"
-                    : "foreground"
-                }
                 className="w-full"
                 href="#"
               >

@@ -41,7 +41,7 @@ function Certifications(){
   return (
     <div id="certificationsSection" className="w-full flex flex-col items-center py-16">
       <motion.h1
-        className="text-6xl font-bold my-9 text-amber-300 text-center"
+        className="text-5xl md:text-6xl font-bold my-9 text-amber-300 text-center"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.5 }}
