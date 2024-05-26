@@ -66,7 +66,7 @@ const skills = [
     imgClass: "h-10 w-10 filter invert",
   },
   { name: "AWS", x: "30vw", y: "0vw", logoPath: "/svg/aws.svg", imgClass: "filter invert",},
-  { name: "MongoDB", x: "-41vw", y: "-5vw", logoPath: "/svg/mongoDB.svg" },
+  { name: "MongoDB", x: "-41vw", y: "-5vw", logoPath: "/svg/mongodb.svg" },
   { name: "Git", x: "35vw", y: "-8vw", logoPath: "/svg/git.svg" },
 
 ];
