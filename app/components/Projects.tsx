@@ -71,7 +71,7 @@ const Projects: React.FC = () => {
       <motion.div
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: false, amount: 0.2 }}
+        viewport={{ once: true, amount: 0.2 }}
         transition={{ duration: 0.7, delay: 0.2 }}
         variants={fadeInUpVariants}
         className=" md:w-full flex flex-col items-center "

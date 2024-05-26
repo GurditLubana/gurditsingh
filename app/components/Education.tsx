@@ -13,7 +13,7 @@ function Education() {
   return (
     <div
       id="educationSection"
-      className="w-full  flex flex-col items-center py-16"
+      className="w-full flex flex-col items-center py-16"
     >
       <motion.h1
         className="text-5xl md:text-6xl font-bold my-9 text-amber-300 text-center"
@@ -29,7 +29,7 @@ function Education() {
         className="darkBg p-8 rounded-lg w-full md:w-5/6 flex flex-col md:flex-row items-center shadow-lg"
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: false, amount: 0.1 }}
+        viewport={{ once: true, amount: 0.1 }}
         transition={{ duration: 1 }}
         variants={fadeInUpVariants}
       >
