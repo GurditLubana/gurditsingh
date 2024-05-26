@@ -8,10 +8,11 @@ body,
   background-color: #222230;
 }
 
+
 .navbar,
 .landingPage,
 .darkBg {
-  background-color: #191925;
+  background: linear-gradient(245deg, rgba(25,25,37,1) 0%, rgba(12,4,33,1) 52%, rgba(30,8,46,1) 100%);;
 }
 
 .navbar{
@@ -74,14 +75,15 @@ body,
   padding-right: 1rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-  border: #fcd34d solid 2px;
+  border: #fcd34dc4 solid 1px;
   border-radius: 10px;
-  color: #fcd34d;
+  color: #fcd34dc4;
 }
 
 .button:hover {
-  background-color: #fcd34d;
+  background-color: #fcd34dc4;
   color: #222230;
+  font-weight: bold;
 }
 
 .embla {

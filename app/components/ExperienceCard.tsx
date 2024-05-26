@@ -39,7 +39,7 @@ function ExperienceCard({
         viewport={{ once: false, amount: 0.7 }}
         transition={{ duration: 1.5, delay: 0 }}
       >
-        <div className="flex items-center justify-center w-14 h-14 mx-8 shrink-0 md:order-1 rounded-full bg-white">
+        <div className="flex items-center justify-center w-14 h-14 mx-8 shrink-0 md:order-1 rounded-full bg-white border-amber-300">
           <Image 
             src={logoUrl} 
             alt={`${companyName} logo`} 
@@ -48,19 +48,19 @@ function ExperienceCard({
             className="object-contain rounded-full"
           />
         </div>
-        <div className="w-[calc(100%-4rem)] md:w-[calc(50%-4rem)] bg-gray-700 p-4 py-6 rounded-lg border border-gray-800 flex flex-col space-y-2">
+        <div className="w-[calc(100%-4rem)] md:w-[calc(50%-4rem)] darkBg p-4 py-6 rounded-lg border border-amber-100 flex flex-col space-y-2">
           <div className="flex flex-col w-full">
             <div className="flex items-center justify-between mb-2">
-              <div className="font-bold text-white text-lg">{companyName}</div>
-              <time className="font-caveat font-medium text-indigo-400">{date}</time>
+              <div className="font-bold text-amber-300 text-lg">{companyName}</div>
+              <time className="font-caveat font-medium text-amber-100">{date}</time>
             </div>
             <div className="text-gray-300">{role}</div>
           </div>
           <button
             onClick={toggleModal}
-            className="self-center text-indigo-400 hover:text-indigo-600 transition-colors duration-200"
+            className="self-center button duration-200"
           >
-            View Responsibilities
+            Read More
           </button>
         </div>
       </motion.div>

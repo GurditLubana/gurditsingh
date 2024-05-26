@@ -12,17 +12,17 @@ interface MyinfoProps{
 function MyInfo({classProp}: MyinfoProps) {
   return (
     <div className={`grid grid-cols-1 h-full w-full ${classProp}`}>
-      <div className="flex flex-col items-start justify-center p-5 m-auto rounded-lg max-w-2xl">
+      <div className="flex flex-col h-full items-start justify-center p-5 m-auto rounded-lg max-w-2xl">
         <h1 className="text-8xl text-amber-300 font-bold mb-2">Gurdit Singh</h1>
         <p className="text-xl text-amber-200 font-semibold ">
           Full Stack Developer
         </p>
-        <p className="text-2xl mt-8">
+        <p className="text-2xl mt-16">
           In the world of code, I find my purpose, developing impactful software
           with every line I write. Let&apos;s make technology work for us.
         </p>
         
-        <div className="flex space-x-4 mt-8">
+        <div className="flex space-x-4 mt-16">
         <Link
             className="button font-bold text-xl me-8"
             href="https://gurditlubana.github.io/resume.pdf"
