@@ -3,8 +3,8 @@ import ExperienceCard from "./ExperienceCard";
 
 function Experience() {
   return (
-    <div id="experienceSection" className=" mx-8 px-8 flex flex-col gap-1">
-      <h1 className="text-6xl font-bold mt-20 my-9 text-amber-300 text-center">Work Experience </h1>
+    <div id="experienceSection" className=" mx-1 md:mx-8 md:px-8 flex flex-col gap-1">
+      <h1 className="text-5xl md:text-6xl font-bold mt-20 my-9 text-amber-300 text-center">Work Experience </h1>
       <div className=" relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-slate-300 before:to-transparent">
         <ExperienceCard
           companyName="Wawanesa Insurance Group"

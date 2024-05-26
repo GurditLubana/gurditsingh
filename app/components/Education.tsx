@@ -16,7 +16,7 @@ function Education() {
       className="w-full  flex flex-col items-center py-16"
     >
       <motion.h1
-        className="text-6xl font-bold my-9 text-amber-300 text-center"
+        className="text-5xl md:text-6xl font-bold my-9 text-amber-300 text-center"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.1 }}
@@ -26,7 +26,7 @@ function Education() {
         Education
       </motion.h1>
       <motion.div
-        className="darkBg p-8 rounded-lg w-3/4 md:w-5/6 flex flex-col md:flex-row items-center shadow-lg"
+        className="darkBg p-8 rounded-lg w-full md:w-5/6 flex flex-col md:flex-row items-center shadow-lg"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: false, amount: 0.1 }}
@@ -38,17 +38,17 @@ function Education() {
           alt="University of Manitoba"
           width={500}
           height={300}
-          className="rounded-lg mb-4 md:mb-0 md:mr-12 "
+          className="rounded-lg mb-4 mx-0 md:mb-0 md:mr-12 "
         />
         <div className="flex flex-col justify-center md:items-start w-full md:w-auto text-white">
-          <h2 className="text-3xl font-semibold text-light text-amber-200 mb-2">
+          <h2 className="text-2xl md:text-3xl font-semibold text-light text-amber-200 mb-2 text-center">
             University of Manitoba
           </h2>
-          <h3 className="text-2xl font-medium text-gray-300 mb-2">
+          <h3 className="text-xl md:text-2xl font-medium text-gray-300 mb-2">
             Bachelor of Science in Computer Science
           </h3>
-          <p className="text-lg text-gray-400 mb-2">Minors in Mathematics</p>
-          <p className="text-lg text-gray-400 mb-6">
+          <p className="text-md md:text-lg text-gray-400 mb-2">Minors in Mathematics</p>
+          <p className="text-md md:text-lg text-gray-400 mb-6">
             September 2019 - December 2023
           </p>
           <div className="mb-6">

@@ -71,13 +71,13 @@ function Navigationbar() {
         </NavbarContent>
         <NavbarContent justify="end">
           <NavbarItem className="hidden lg:flex">
-            <Link href="#">
+            <Link href="mailto:gurditsingh7834@gmail.com">
               <span> gurditsingh7834@gmail.com</span>
             </Link>
           </NavbarItem>
           <NavbarItem>
             <Link
-              className="hover:bg-amber-400 py-4 ms-6 px-6 rounded-sm bg-amber-300 text-black flex items-center justify-center"
+              className="hover:bg-amber-400 py-4 ms-6 my-2 px-6 rounded-sm bg-amber-300 text-black flex items-center justify-center"
               href="#contactMeSection"
             >
               <Image
@@ -91,7 +91,7 @@ function Navigationbar() {
             </Link>
           </NavbarItem>
         </NavbarContent>
-        <NavbarMenu>
+        <NavbarMenu className="menuNavbar text-black ">
           {menuItems.map((item, index) => (
             <NavbarMenuItem key={`${item}-${index}`}>
               <Link

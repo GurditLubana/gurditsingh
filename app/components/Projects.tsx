@@ -57,9 +57,9 @@ const Projects: React.FC = () => {
   const OPTIONS: EmblaOptionsType = { loop: true };
 
   return (
-    <div id="projectSection" className="w-full h-full overflow-hidden">
+    <div id="projectSection" className="project w-full h-full overflow-hidden">
       <motion.h1
-        className="text-6xl font-bold mt-16 text-amber-300 text-center"
+        className="text-5xl md:text-6xl font-bold mt-16 text-amber-300 text-center"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.2 }}
@@ -74,7 +74,7 @@ const Projects: React.FC = () => {
         viewport={{ once: false, amount: 0.2 }}
         transition={{ duration: 0.7, delay: 0.2 }}
         variants={fadeInUpVariants}
-        className="w-full flex flex-col items-center "
+        className=" md:w-full flex flex-col items-center "
       >
         <ProjectCarousel projects={projects} options={OPTIONS} />
       

@@ -9,6 +9,10 @@ body,
   cursor: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .cursor {
   position: fixed;
   top: 0;
@@ -39,7 +43,7 @@ body,
 .navbar,
 .landingPage,
 .darkBg {
-  background: linear-gradient(245deg, rgba(25,25,37,1) 0%, rgba(12,4,33,1) 52%, rgba(30,8,46,1) 100%);;
+  background: linear-gradient(245deg, rgba(25,25,37,1) 0%, rgb(8, 3, 22) 52%, rgb(22, 7, 34) 100%);;
 }
 
 .navbar{
@@ -113,16 +117,17 @@ body,
   font-weight: bold;
 }
 
-.embla {
+.embla{
   max-width: 51rem;
-  margin: auto;
   margin-bottom: 1rem;
   margin-top: 2rem;
   --slide-height: 19rem;
   --slide-spacing: 1rem;
-  --slide-size: 72%;
+  --slide-size: 90%;
   position: relative;
 }
+
+
 .embla__viewport {
   width: 100%;
 }
@@ -252,4 +257,9 @@ body,
 
 .send {
   transform: translateY(-20vh);
+}
+
+
+.menuNavbar{
+  height: 40vh !important;
 }

@@ -21,11 +21,11 @@ function ProjectCard({ image, title, description, liveLink, codeLink } : Project
       <Image src={image} alt={title} width={600} height={400} className="w-full h-full object-cover" />
       <div className="py-2 text-center text-xl bg-amber-300 text-black font-bold" >{title}</div>
       <div className="absolute inset-0 bg-black bg-opacity-90 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-between p-4">
-        <div className="text-amber-300 text-xl font-bold text-center ">{title}</div>
-        <div className="text-white text-lg">{description}</div>
-        <div className="flex space-x-4">
-          <Link href={liveLink} target="_blank" className="button font-bold">Live</Link>
-          <Link href={codeLink} target="_blank" className="button font-bold">Code</Link>
+        <div className="text-amber-300 text-md md:text-xl font-bold text-center ">{title}</div>
+        <div className="text-white text-sm md:text-lg">{description}</div>
+        <div className="flex mt-2 space-x-4">
+          <Link href={liveLink} target="_blank" className="button md:font-bold">Live</Link>
+          <Link href={codeLink} target="_blank" className="button md:font-bold">Code</Link>
         </div>
       </div>
     </motion.div>
