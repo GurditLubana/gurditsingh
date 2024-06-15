@@ -29,14 +29,14 @@ const projects = [
     description:
       "Real-time chat application built with React, Node.js, and WebSocket, enabling instant messaging and broadcast capabilities across connected users. Designed to explore full-stack development practices and real-time data communication.",
     image: "/images/chitchat.png",
-    liveLink: "https://jsbootcamp.com",
+    liveLink: "No link",
     codeLink: "https://github.com/GurditLubana/Chat-Application/tree/main",
   },
   {
     title: "Student management Desktop Application",
     description:"This desktop application is a student management system in which user can manupulate all sort of student information present in the MySQL database (i.e. perform CRUD operations).",
     image: "/images/SMDA.png",
-    liveLink: "https://pythonbootcamp.com",
+    liveLink: "No link",
     codeLink: "https://github.com/GurditLubana/Student-mangement-Application/tree/main",
   },
   {

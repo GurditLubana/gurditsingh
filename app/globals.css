@@ -126,9 +126,9 @@ html {
   max-width: 51rem;
   margin-bottom: 1rem;
   margin-top: 2rem;
-  --slide-height: 19rem;
+  --slide-height: 1rem;
   --slide-spacing: 1rem;
-  --slide-size: 90%;
+  --slide-size: 68%;
   position: relative;
 }
 
@@ -147,6 +147,11 @@ html {
   flex: 0 0 var(--slide-size);
   min-width: 0;
   padding-left: var(--slide-spacing);
+}
+
+.disabled {
+  pointer-events: none;
+  opacity: 0.3;
 }
 
 .embla__controls {
@@ -175,8 +180,8 @@ html {
   padding: 0;
   margin: 0;
   box-shadow: inset 0 0 0 0.2rem var(--detail-medium-contrast);
-  width: 3.6rem;
-  height: 3.6rem;
+  width: 3rem;
+  height: 3rem;
   z-index: 1;
   border-radius: 50%;
   color: var(--text-body);

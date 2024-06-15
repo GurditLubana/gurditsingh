@@ -24,7 +24,8 @@ function ProjectCard({ image, title, description, liveLink, codeLink } : Project
         <div className="text-amber-300 text-md md:text-xl font-bold text-center ">{title}</div>
         <div className="text-white text-sm md:text-lg">{description}</div>
         <div className="flex mt-2 space-x-4">
-          <Link href={liveLink} target="_blank" className="button md:font-bold">Live</Link>
+          
+          <Link href={liveLink} target="_blank" className={`button md:font-bold ${liveLink == "No link" ?"disabled":""} `}>Live</Link>
           <Link href={codeLink} target="_blank" className="button md:font-bold">Code</Link>
         </div>
       </div>
