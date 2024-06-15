@@ -22,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-      <link rel="icon" href="/images/turban.png" />
+      <link rel="icon" href="/images/siteICO.webp" />
       </head>
       <body className={marcellus.className}>
         <NextUIProvider>{children}</NextUIProvider>
