@@ -13,7 +13,7 @@ function MyInfo({ classProp }: MyinfoProps) {
   return (
     <div className={`grid grid-cols-1 h-full w-full ${classProp}`}>
       <div className="flex flex-col h-full items-center md:items-start justify-center p-5 m-auto rounded-lg max-w-2xl">
-        <h1 className="text-6xl md:text-8xl text-amber-300 font-bold mb-2">Gurdit Singh</h1>
+        <h1 className="text-6xl md:text-6xl 2xl:text-8xl text-amber-300 font-bold mb-2">Gurdit Singh</h1>
         <Typewriter 
           
           options={{
