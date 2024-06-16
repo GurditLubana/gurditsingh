@@ -28,13 +28,13 @@ const certifications: Certification[] = [
     logo: "/images/udemy.png",
     link: "https://www.udemy.com/certificate/UC-6ba4c958-7cb8-4cb9-be6f-868969d3d74e/",
   },
-  {
-    title: "Foundational C# with Microsoft",
-    issuer: "FreeCodeCamp",
-    date: "March 2024",
-    logo: "/images/freecodecamp.png",
-    link: "https://www.udemy.com/certificate/UC-6ba4c958-7cb8-4cb9-be6f-868969d3d74e/",
-  },
+  // {
+  //   title: "Foundational C# with Microsoft",
+  //   issuer: "FreeCodeCamp",
+  //   date: "March 2024",
+  //   logo: "/images/freecodecamp.png",
+  //   link: "https://www.udemy.com/certificate/UC-6ba4c958-7cb8-4cb9-be6f-868969d3d74e/",
+  // },
 ];
 
 function Certifications(){
@@ -50,7 +50,7 @@ function Certifications(){
       >
         Certifications
       </motion.h1>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2  gap-8">
         {certifications.map((cert, index) => (
           <motion.div
             key={index}
