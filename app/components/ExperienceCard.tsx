@@ -53,7 +53,7 @@ function ExperienceCard({
             <div className="text-center md:text-start text-gray-300">{role}</div>
             <button
               onClick={() => setIsModalOpen(true)}
-              className="button text-center text-gray-300 mt-2 md:mx-80"
+              className="button text-center text-gray-300 mt-4 md:mx-24 2xl:mx-56"
             >
               Responsibilities
             </button>
@@ -63,7 +63,7 @@ function ExperienceCard({
 
       {isModalOpen && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
-          <div className="bg-white darkBg p-6 rounded-lg w-11/12 md:w-2/3 lg:w-1/2 relative">
+          <div className="bg-white darkBg p-8 rounded-lg w-11/12 md:w-2/3 lg:w-1/2 relative">
             <button
               onClick={() => setIsModalOpen(false)}
               className="absolute top-2 right-2 text-gray-400 hover:text-gray-600"

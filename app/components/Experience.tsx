@@ -8,9 +8,10 @@ const experiences = [
     date: "February 2023 - Present",
     logoUrl: "/images/wawanesa.png",
     responsibilities: [
-      "Managed office supplies and inventory",
-      "Coordinated and scheduled meetings",
-      "Prepared reports and maintained records",
+      "Managed 15 daily policy records, ensuring accuracy and resolving discrepancies with strong problem-solving skills.",
+      "Coordinated mail for 25 employees, achieving a 98% delivery rate and excelling in stakeholder communication.",
+      "Supported 400+ policyholders monthly, processing payments and inquiries with a 95% satisfaction rate.",
+      "Prioritized and multitasked across tasks using JIRA, successfully managing work priorities and team performance."
     ],
   },
   {
@@ -19,9 +20,9 @@ const experiences = [
     date: "April 2023 - September 2023",
     logoUrl: "/images/manitoba-gov.png",
     responsibilities: [
-      "Developed and maintained web applications",
-      "Collaborated with senior developers on various projects",
-      "Provided technical support and troubleshooting",
+      "Enhanced Winnipeg’s school dataset accuracy by 95% through cleansing and conversion to a new XSD schema, maintaining compliance with educational data standards.",
+      "Improved data processing efficiency and reliability by 30% using Python, Visual Studio Code, and MS SQL Server for dataset integration.",
+      "Increased data analysis proficiency by 40%, focusing on accurate and actionable public sector data analysis through continuous learning."
     ],
   },
   {
@@ -30,9 +31,10 @@ const experiences = [
     date: "September 2022 - January 2023",
     logoUrl: "/images/uofwLogo.png",
     responsibilities: [
-      "Ensured the safety and security of campus facilities",
-      "Monitored surveillance systems",
-      "Responded to emergency situations",
+      "Ensured the safety and security of campus facilities.",
+      "Monitored surveillance systems.",
+      "Responded to emergency situations.",
+      "Conducted regular security checks and patrolled premises."
     ],
   },
   {
@@ -41,9 +43,10 @@ const experiences = [
     date: "January 2022 - September 2022",
     logoUrl: "/images/uofm-logo.png",
     responsibilities: [
-      "Assisted in research projects in computational mathematics",
-      "Collected and analyzed data",
-      "Prepared research reports and presentations",
+      "Developed a new theorem in computational mathematics to approximate orthogonal polynomial values.",
+      "Used Python and Cocalc to generate and analyze data, staying current with industry trends.",
+      "Delivered a professional presentation at an academic conference, highlighting theorem applications.",
+      "Documented research findings and algorithms, enhancing reproducibility and supporting further research."
     ],
   },
   {
@@ -52,13 +55,13 @@ const experiences = [
     date: "January 2021 - January 2022",
     logoUrl: "/images/aircanda.png",
     responsibilities: [
-      "Ensured the safety of passengers and staff",
-      "Conducted security checks and screenings",
-      "Handled emergency situations and incidents",
+      "Ensured the safety of the staff working in the building.",
+      "Conducted security checks and screenings.",
+      "Handled emergency situations and incidents.",
+      "Monitored surveillance systems and performed regular security patrols."
     ],
   },
 ];
-
 function Experience() {
   return (
     <div id="experienceSection" className="mx-1 md:mx-8 md:px-8 flex flex-col gap-1">
