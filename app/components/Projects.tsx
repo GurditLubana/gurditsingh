@@ -13,7 +13,7 @@ const projects = [
     image: "/images/SnackStats.jpg",
     liveLink:
       "https://chromewebstore.google.com/detail/snackstats-%E2%80%93-track-your-f/dpamdjimipnebihinoccnfehkohpeagh",
-    codeLink: "https://github.com/GurditLubana/SnackStats--Chrome-Extension",
+    codeLink: "https://github.com/GurditLubana/SnackStats---Chrome-extension",
   },
   {
     title: "ScreenScan Chrome Extension - Instant Screenshot Search",
