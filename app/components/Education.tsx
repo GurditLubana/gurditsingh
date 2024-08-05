@@ -33,7 +33,7 @@ function Education() {
         transition={{ duration: 1 }}
         variants={fadeInUpVariants}
       >
-        <div className="cross-fade-container">
+        <div className="cross-fade-container me-9">
           <Image
             src="/images/uofm-image.png"
             alt="University of Manitoba"

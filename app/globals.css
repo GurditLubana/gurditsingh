@@ -275,30 +275,10 @@ html {
   background-color: #222230;
 }
 
-
-
-/* .cross-fade img {
-  position: absolute;
-  opacity: 1;
-  transition: opacity 0.25s ease-in-out;
-}  */
-/*
-.cross-fade img:first-child {
-  opacity: 1;
-}
-
-.cross-fade:hover img {
-  opacity: 1;
-}
-
-.cross-fade:hover img:first-child {
-  opacity: 0;
-} */
-
 .cross-fade-container {
   position: relative;
-  width: 500px; /* Set the width */
-  height: 300px; /* Set the height */
+  width: 30rem; 
+  height: 20rem; 
 }
 
 .cross-fade-container img {
