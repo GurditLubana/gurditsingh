@@ -33,13 +33,22 @@ function Education() {
         transition={{ duration: 1 }}
         variants={fadeInUpVariants}
       >
-        <Image
-          src="/images/uofm-image.png"
-          alt="University of Manitoba"
-          width={500}
-          height={300}
-          className="rounded-lg mb-4 mx-0 md:mb-0 md:mr-12 "
-        />
+        <div className="cross-fade-container">
+          <Image
+            src="/images/uofm-image.png"
+            alt="University of Manitoba"
+            width={500}
+            height={300}
+            className=" universityImg rounded-lg mb-4 mx-0 md:mb-0 md:mr-12 "
+          />
+          <Image
+            src="/images/graduated.jpg"
+            alt="University of Manitoba"
+            width={500}
+            height={300}
+            className="graduationImg rounded-lg mb-4 mx-0 md:mb-0 md:mr-12 "
+          />
+        </div>
         <div className="flex flex-col justify-center md:items-start w-full md:w-auto text-white">
           <h2 className="text-2xl md:text-3xl font-semibold text-light text-amber-200 mb-2 text-center">
             University of Manitoba
@@ -47,9 +56,11 @@ function Education() {
           <h3 className="text-xl md:text-2xl font-medium text-gray-300 mb-2">
             Bachelor of Science in Computer Science
           </h3>
-          <p className="text-md md:text-lg text-gray-400 mb-2">Minors in Mathematics</p>
+          <p className="text-md md:text-lg text-gray-400 mb-2">
+            Minors in Mathematics
+          </p>
           <p className="text-md md:text-lg text-gray-400 mb-6">
-            September 2019 - December 2023
+            September 2019 - June 2024
           </p>
           <div className="mb-6">
             <h3 className="text-xl font-medium text-amber-200 mb-2">Honors</h3>
@@ -78,10 +89,7 @@ function Education() {
                   />
                 </Link>
               </li>
-              <li>
-              The Dynamics of HPV Infection and Cervical Cancer Cells.
-                
-              </li>
+              <li>The Dynamics of HPV Infection and Cervical Cancer Cells.</li>
             </ul>
           </div>
           <div className="w-full">
